@@ -6,6 +6,10 @@ A responsive and interactive birthday invitation built with vanilla HTML, CSS, a
 
 [View the live invitation](https://fadesasadeghi.github.io/interactive-birthday-invitation/)
 
+## 📸 Preview
+
+![Interactive Birthday Invitation Preview](assets/screenshots/preview.png)
+
 The experience begins with a closed illustrated envelope. Opening it reveals the invitation in multiple interactive steps, followed by a responsive birthday details screen with background music.
 
 ## ✨ Features
