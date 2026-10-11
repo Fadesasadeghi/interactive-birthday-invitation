@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4eee5">
+    <title>You're invited · A birthday invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="invitation" aria-labelledby="invitation-title">
+      <div class="invitation-content" id="envelope-screen">
+        <span class="ornament" aria-hidden="true">✧</span>
+        <h1 id="invitation-title">You're invited</h1>
+        <button class="envelope" type="button" aria-label="Open the invitation" aria-describedby="invitation-hint" aria-expanded="false">
+          <img class="envelope-image envelope-closed" src="assets/images/closed-envelope.png" width="543" height="424" alt="" draggable="false">
+          <img class="envelope-image envelope-open" src="assets/images/open-envelope.png" width="693" height="508" alt="" draggable="false" aria-hidden="true">
+        </button>
+        <p class="invitation-hint" id="invitation-hint">Open the invitation</p>
+      </div>
+      <section class="birthday-details" id="details-screen" aria-labelledby="details-title" hidden>
+        <div class="birthday-photo" role="img" aria-label="Birthday portrait placeholder">
+          <span class="photo-placeholder" aria-hidden="true">✧</span>
+          <img id="birthday-photo" data-src="assets/images/birthday-demo.png" alt="تصویر جشن تولد" hidden>
+        </div>
+        <div class="birthday-information" lang="fa" dir="rtl">
+          <h2 id="details-title" tabindex="-1">دوست دارم تو هم کنارم باشی<br>تا با هم تولدم رو جشن بگیریم</h2>
+          <ul class="event-information" aria-label="اطلاعات جشن تولد">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>
+              <span dir="ltr">1405 / 01 / 01</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span dir="ltr">18:00 - 16:00</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>محل برگزاری جشن</span>
+            </li>
+          </ul>
+        </div>
+        <footer class="birthday-closing" lang="fa" dir="rtl">
+          <p>منتظرم که با هم کلی خاطره‌ی قشنگ بسازیم ♡</p>
+        </footer>
+      </section>
+      <button class="music-control" id="music-control" type="button" aria-label="Pause music" hidden>
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <span class="music-label">Pause music</span>
+      </button>
+      <audio id="birthday-music" src="assets/audio/birthday-music.mp3" preload="metadata" loop></audio>
+      <p class="sr-only" id="invitation-status" role="status"></p>
+    </main>
+  </body>
+</html>
